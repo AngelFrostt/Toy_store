@@ -1,0 +1,72 @@
+.Filers {
+    width: 320px;
+    background-color: white;
+    padding: 33px 27px;
+    border-radius: 13px;
+    box-shadow: 1px 1px 10px rgba(107, 116, 240, 0.603);
+    background-image: url('/img/bg.png');
+}
+
+.fillers__title {
+    font-size: 23px;
+    /* text-decoration: underline; */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+hr {
+    margin: 9px auto;
+}
+
+.fillters__btns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.title__filter__btn {
+    font-size: 17px;
+}
+
+.filter__inpt {
+    width: 50px;
+    background: #f3f4ff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 3px;
+    font-family: "Montserrat Alternates", serif;
+  color: #131313;
+}
+
+.title__filter__btn {
+    
+}
+
+select {
+    width: 150px;
+    background: #f3f4ff;
+    border: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    border-radius: 5px;
+
+    font-family: "Montserrat Alternates", serif;
+  color: #131313;
+  font-weight: 500;
+}
+
+option {
+    font-family: "Montserrat Alternates", serif;
+  color: #131313;
+  font-weight: 500;
+}
+
+
+
+@media  (max-width: 1024px) {
+    .filletr__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+  }

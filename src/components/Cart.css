@@ -1,0 +1,202 @@
+h2 {
+  text-align: left;
+  margin: 50px auto;
+}
+
+.cart__item {
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+  border-bottom: 3px solid #8b83d4;
+  border-top: 3px solid #8b83d4;
+  background: rgb(187, 204, 240);
+  font-family: "Open Sans";
+  transition: 0.3s ease-in;
+  border-radius: 7px;
+  box-shadow: 1px 1px 10px rgba(97, 82, 224, 0.404);
+  overflow: hidden; /* Скрываем всё, что выходит за рамки */
+  position: relative;
+}
+
+.cart__item img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s ease-in-out, object-position 0.5s ease-in-out; 
+}
+
+.cart__item img:hover {
+    transform: scale(1.1); 
+    object-position: center; 
+}
+
+.cart__details {
+  background-color: white;
+  font-family: "Montserrat Alternates", serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #252525;
+}
+
+.cart__btn button {
+    cursor: pointer;
+    font-family: "Montserrat Alternates", serif;
+    padding: 0 12px;
+    background: #8b83d4;
+    color: white;
+    transition: 0.3s ease-in;
+    border-radius: 5px;
+    border: none;
+    margin: 0 5px;
+}
+
+.cart__btn button:hover {
+    background: #5a5a81;
+}
+
+.btn__delete {
+    cursor: pointer;
+    font-family: "Montserrat Alternates", serif;
+    padding: 10px 12px;
+    background: #8b83d4;
+    color: white;
+    transition: 0.3s ease-in;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 5px;
+    font-weight: 500;
+}
+
+.btn__delete:hover {
+    background: #5a5a81;
+}
+
+.card__items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cart__order {
+
+}
+
+.carts__all {
+    display: flex;
+   justify-content: space-between;
+    flex-direction: row;
+}
+.cart__order {
+    background-color: rgba(255, 255, 255, 0.63);
+    border: 1px dashed black;
+    border-radius: 13px;
+    height: min-content;
+    padding: 30px 35px;
+    text-align: center;
+}
+.order__title {
+    font-size: 30px;
+}
+
+.order-btn {
+    cursor: pointer;
+    font-family: "Montserrat Alternates", serif;
+    padding: 10px 12px;
+    background: #8b83d4;
+    color: white;
+    transition: 0.3s ease-in;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 5px;
+    font-weight: 700;
+}
+
+.order-btn:hover {
+    background: #5a5a81;
+}
+h1 {
+    text-align: center;
+  }
+  
+  .profile__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .profile__info {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.637);
+    padding: 30px 25px;
+    border-radius: 13px;
+    border: 1px dashed rgb(19, 19, 19);
+    font-size: 19px;
+  }
+
+  .title__profile {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  @media  (max-width: 700px) {
+    .carts__all {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+  }
+  .profile__container {
+    align-items: center;
+    text-align: center;
+}
+
+  }
+  @media  (max-width: 500px) {
+    .cart__order {
+      width: min-content;
+  }
+  .carts__all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.card__items {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  margin: 50px 5%;
+}
+.profile__info {
+  width: min-content;
+}
+  }
+
+  @media  (max-width: 400px) {
+    h1 {
+      font-size: 23px;
+  }
+  .cart__order {
+    padding: 5px 5px;
+  }
+  .order__title {
+    font-size: 23px;
+}
+.order-btn {
+  padding: 5px 5px;
+  margin: 5px 5px;
+  font-weight: 600;
+}
+}
+
+@media  (max-width: 370px) {
+  .cart__item {
+    width: min-content;
+}
+}
